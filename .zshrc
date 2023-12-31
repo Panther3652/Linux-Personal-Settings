@@ -137,5 +137,17 @@ export NVM_DIR="$HOME/.nvm"
 export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
 export PATH=${PATH}:${JAVA_HOME}/bin
 
+# Ruby 환경변수
+#export RUBYBIN=/{{YOUR_PATH}}/Ruby30-x64/bin
+#alias ruby="$RUBYBIN"/ruby
+#alias ruby.exe=$RUBYBIN/ruby.exe
+#alias gem="$RUBYBIN"/gem.cmd
+#alias bundle="$RUBYBIN"/bundle.bat
+#alias bundler="$RUBYBIN/bundler.bat"
+#alias jekyll="$RUBYBIN/jekyll.bat"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
