@@ -129,9 +129,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-################
-# 환경 변수 설정
-################
+##################
+# 환경 변수 설정 #
+##################
 
 # Java 환경변수 설정
 export JAVA_HOME=/usr/lib/jvm/java-19-openjdk-amd64
@@ -145,6 +145,10 @@ export PATH=${PATH}:${JAVA_HOME}/bin
 #alias bundle="$RUBYBIN"/bundle.bat
 #alias bundler="$RUBYBIN/bundler.bat"
 #alias jekyll="$RUBYBIN/jekyll.bat"
+
+#############
+# 자동 실행 #
+#############
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
